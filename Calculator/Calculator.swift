@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  Calculator.swift
 //  Calculator
 //
 //  Created by Joshua Partogi on 24/3/17.
@@ -8,5 +8,8 @@
 
 import Foundation
 
-print("Hello, World!")
-
+class Calculator {
+    func add(params: String) -> Int {
+        return 0;
+    }
+}

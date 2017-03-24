@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C8B02121E8556060000049D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B02111E8556060000049D /* main.swift */; };
+		8C8B02251E85567C0000049D /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B02241E85567C0000049D /* Calculator.swift */; };
+		8C8B02271E8556AD0000049D /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B02261E8556AD0000049D /* CalculatorTests.swift */; };
+		8C8B02281E8559580000049D /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B02241E85567C0000049D /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,11 +26,21 @@
 
 /* Begin PBXFileReference section */
 		8C8B020E1E8556060000049D /* Calculator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Calculator; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C8B02111E8556060000049D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		8C8B021C1E8556410000049D /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C8B02201E8556410000049D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C8B02241E85567C0000049D /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		8C8B02261E8556AD0000049D /* CalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8C8B020B1E8556060000049D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C8B02191E8556410000049D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				8C8B02101E8556060000049D /* Calculator */,
+				8C8B021D1E8556410000049D /* Tests */,
 				8C8B020F1E8556060000049D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				8C8B020E1E8556060000049D /* Calculator */,
+				8C8B021C1E8556410000049D /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +71,18 @@
 		8C8B02101E8556060000049D /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				8C8B02111E8556060000049D /* main.swift */,
+				8C8B02241E85567C0000049D /* Calculator.swift */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		8C8B021D1E8556410000049D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8C8B02201E8556410000049D /* Info.plist */,
+				8C8B02261E8556AD0000049D /* CalculatorTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +105,23 @@
 			productReference = 8C8B020E1E8556060000049D /* Calculator */;
 			productType = "com.apple.product-type.tool";
 		};
+		8C8B021B1E8556410000049D /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C8B02211E8556410000049D /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				8C8B02181E8556410000049D /* Sources */,
+				8C8B02191E8556410000049D /* Frameworks */,
+				8C8B021A1E8556410000049D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 8C8B021C1E8556410000049D /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +133,10 @@
 				ORGANIZATIONNAME = "Joshua Partogi";
 				TargetAttributes = {
 					8C8B020D1E8556060000049D = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					8C8B021B1E8556410000049D = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -111,16 +155,36 @@
 			projectRoot = "";
 			targets = (
 				8C8B020D1E8556060000049D /* Calculator */,
+				8C8B021B1E8556410000049D /* Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C8B021A1E8556410000049D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8C8B020A1E8556060000049D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C8B02121E8556060000049D /* main.swift in Sources */,
+				8C8B02251E85567C0000049D /* Calculator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C8B02181E8556410000049D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C8B02281E8559580000049D /* Calculator.swift in Sources */,
+				8C8B02271E8556AD0000049D /* CalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +295,32 @@
 			};
 			name = Release;
 		};
+		8C8B02221E8556410000049D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = scrum.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8C8B02231E8556410000049D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = scrum.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -248,6 +338,14 @@
 			buildConfigurations = (
 				8C8B02161E8556060000049D /* Debug */,
 				8C8B02171E8556060000049D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8C8B02211E8556410000049D /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C8B02221E8556410000049D /* Debug */,
+				8C8B02231E8556410000049D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
